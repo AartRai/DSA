@@ -1,5 +1,11 @@
 //https://www.geeksforgeeks.org/problems/max-sum-subarray-of-size-k5313/1
 
+// Calculate sum of first window of size k.
+// Then slide the window by:
+// - Removing the leftmost element.
+// - Adding the new rightmost element.
+// Keep track of the maximum window sum encountered.
+
 class Solution {
   public:
     int maxSubarraySum(vector<int>& arr, int k) {
